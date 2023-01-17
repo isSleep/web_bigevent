@@ -32,6 +32,7 @@ $(function () {
           if(res.status !== 0) {
             return layui.layer.msg('更新密码失败')
           }
+          console.log($(this).serialize())
           layui.layer.msg('更新密码成功！')
           //重置表单
           $('.layui-form')[0].reset()
